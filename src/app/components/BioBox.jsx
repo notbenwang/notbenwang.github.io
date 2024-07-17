@@ -12,22 +12,23 @@ export default function BioBox({Tilt, setOpen, setDialogTo}) {
     reverse: true
   };
   return (
-    <div className="perspective-400 -translate-y-[70px] translate-x-[80px]">
-  <div className="container transform rotate-x-[-15deg] rotate-y-[-25deg] -translate-z-10 rotate-2">
-  <Tilt options={options} className="container">
-        <div className="absolute box-border w-96 -mr-10  mb-5  ml-4 " onClick={()=>{setOpen(true); setDialogTo(true)}}>
+    <div className="-translate-y-[120px] translate-x-[220px]">
+  <div className="container">
+  {/* <Tilt options={options} className="container"> */}
+        {/* <div className="absolute box-border w-96 -mr-10  mb-5  ml-4" onClick={()=>{setOpen(true); setDialogTo(true)}}>
             <p className="transition ease-in-out opacity-0 hover:opacity-100 font-mono text-center
-              text-white text-2xl font-extrabold p-[68px] bg-slate-900 bg- bg-opacity-75 shadow-inner">
+              text-white text-2xl font-extrabold p-[68px] bg-slate-600 bg- bg-opacity-75 shadow-inner">
               Expand
             </p>
-        </div>
-        <div className="box-border w-96 -mr-10 -mt-6 outline outline-black/5 bg-white shadow-inner mb-5 p-3 ml-4 ">
-            <p className="font-mono text-center text-black text-lg">
-            Hello! My name is Benjamin Wang, and I'm currently a fourth year student studying Computer Science at the University of Virginia.
+        </div> */}
+        <div className="w-fit rounded-md hover:scale-110 transition ease-in-out -mt-6 outline
+         outline-black/5 bg-slate-400 shadow-inner mb-5 p-3  hover:bg-amber-400"
+         onClick={()=>{setOpen(true); setDialogTo(true)}}>
+            <p className=" font-bold text-center text-white text-sm">
+            ABOUT
             </p>
         </div>
-        
-    </Tilt>
+    {/* </Tilt> */}
   </div>
 </div>
   )

@@ -51,20 +51,20 @@ export default function Home() {
         setProjects={setIsProjectsOpen}
         setContact={setIsContactOpen}/>
 
-      <div className="min-w-[900px] w-screen min-h-[900px] h-[95vh] absolute overflow-hidden z-[99]">
+      <div className="min-w-[900px] w-screen min-h-[750px] h-[95vh] absolute overflow-hidden z-[99]">
         
         <div className=" bg-black bg-[url('/front-white.svg')] bg-no-repeat bg-cover overflow-hidden bg-bottom min-h-screen"> 
-          <main className="flex  flex-col justify-start mt-auto p-24 max-w-fit
-            mx-auto ml-15">
+          <main className="flex flex-col justify-start mt-auto p-24 max-w-fit
+            mx-auto ml-15 ">
             <Rotunda className="rotunda"/>
             <div className="flex-col m-auto z-[98]">
               <AnimatedHeader Tilt={Tilt}/>
-              <ResumeButton Tilt={Tilt} />
-              <ContactButton Tilt={Tilt} setOpen={setIsOpen} setDialogTo={setIsContactOpen}/>
-              <div className="flex-col tracking-widest pt-40 mx-auto -translate-y-[200px] translate-x-[155px] z-[98]">
+              <div className="flex-col tracking-widest pt-40 mx-auto -translate-y-[0px] translate-x-[155px] z-[98]">
                 <BioBox Tilt={Tilt} setOpen={setIsOpen} setDialogTo={setIsAboutOpen}/>
                 <ProjectsButton Tilt={Tilt} setOpen={setIsOpen} setDialogTo={setIsProjectsOpen}/>
                 <SkillsButton Tilt={Tilt} setOpen={setIsOpen} setDialogTo={setIsSkillsOpen}/>
+                <ContactButton Tilt={Tilt} setOpen={setIsOpen} setDialogTo={setIsContactOpen}/>
+                <ResumeButton Tilt={Tilt} />
               </div>
             </div>
           </main>

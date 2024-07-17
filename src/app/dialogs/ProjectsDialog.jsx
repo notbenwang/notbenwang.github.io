@@ -3,13 +3,15 @@ import {DialogPanel} from '@headlessui/react'
 
 export default function ProjectsDialog() {
   return (
-    <DialogPanel className="w-[clamp(60em,_60%,_75em)] h-3/4 overflow-y-scroll space-y-4 border bg-white p-12 
-        z-[150] text-black text-center">
+    <DialogPanel className="w-[clamp(40em,_60%,_40em)] h-3/4 overflow-y-scroll space-y-4 border bg-white p-12 
+        z-[150] text-black text-center font-light">
         <p>PROJECTS</p>
+        <hr className=""/>
         <div className="flex flex-col">
         <p className="text-2xl font-bold">Puzzle App @ UVA</p>
         <a className="italic">September 2023 - December 2023</a>
-          <a className="text-sm text-blue-400" href="https://github.com/notbenwang/PuzzleApp-UVA">Github</a>
+        <a className="text-sm font-extralight">Geographical-Based Puzzle Hunt Web Application</a>
+          <a className="text-sm font-extralight text-blue-400" href="https://github.com/notbenwang/PuzzleApp-UVA">Github</a>
           <br/>
           <p className="mx-12 text-left">
           This project was a collaboration between four other developers to create a Django web-game application
@@ -30,15 +32,13 @@ export default function ProjectsDialog() {
 
           </div>
         </div>
-
+        <hr className=""/>
         <div className="flex flex-col">
           <br/>
-        <p className="text-2xl font-bold">Project Z</p>
-        <p className="">
-          <a className="italic">December 2021 - Present</a>
-          <br/>
+        <p className="text-2xl font-bold">Untitled Project "Z"</p>
+        <a className="italic">December 2021 - Present</a>
+          <a className="text-sm font-extralight">Top Down Survival Game Shooter</a>
           <a className="text-sm text-blue-400" href="https://github.com/notbenwang/Project-Z">Github</a>
-          </p>
           <p className="mx-12 text-left">
             <br/>
             Originally a final project for the Intro CS course I took, I have been working on and off on this project, 
@@ -49,9 +49,6 @@ export default function ProjectsDialog() {
             sought to refactor many of the more convoluded and inefficient aspects of that first project, including moving the 
             project to C# and the implementation of my own collision/pathfinding libraries.
             <br/>
-            <br/>
-            Currently, the project is still very much unpolished, as much of the work has been put into
-            ensuring the mechanics and basic framework have been implemented correctly and efficiently.
           </p>
           <div className="ratio ratio-16x9 self-center pt-5">
           <iframe

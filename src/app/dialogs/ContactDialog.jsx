@@ -4,7 +4,7 @@ import {DialogPanel} from '@headlessui/react'
 export default function ContactDialog() {
   return (
     <DialogPanel className="w-[min(60%,_25em)] h-fit space-y-4 border rounded-xl bg-white p-10 
-        z-[150] text-black text-center ">
+        z-[150] text-black text-center font-light">
         <p className="font-bold">CONTACT</p>
         <p>
           If you'd like to contact me for any reason, please don't hesitate

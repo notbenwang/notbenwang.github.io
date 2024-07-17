@@ -3,10 +3,10 @@ import {DialogPanel} from '@headlessui/react'
 import { Tooltip } from '@mui/material'
 export default function SkillsDialog() {
   return (
-    <DialogPanel className="w-[min(60%,_25em)] h-fit space-y-4 border rounded-xl bg-white p-10 
+    <DialogPanel className="w-[min(60%,_25em)] h-fit space-y-4 border rounded-xl font-light bg-white p-10 
         z-[150] text-black text-center ">
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-        <p className="font-bold">SKILLS</p>
+        <p className="font-bold text-2xl">SKILLS</p>
         
         <p>My Go To's</p>
         <div className="flex flex-row justify-between p-3">
