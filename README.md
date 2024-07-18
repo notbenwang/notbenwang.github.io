@@ -72,7 +72,7 @@ Day 5 I worked and finished the modals. I struggled quite a bit implementing the
 After the initial five day development period, I essentially had all the functionality implemented that I wanted for the portfolio website. All that was left for the following couple of days were to tinker and adjust with some of the spacing, layout, and design choices (i.e button layout, colors, etc).
 
 ## Deployment
-I chose to deploy this portfolio using Github Pages, as it was the same method I had used to deploy my old portfolio, and because there were plenty of resources online for how to deploy Next.js applications onto Github Pages. Deployment to Github Pages went rather smoothly, as Github already supplies a .yml file for Next.js applications; all I had to do was tinker a bit of the settings to make the application a static build and everything was online.
+I chose to deploy this portfolio using Github Pages, as it was the same method I had used to deploy my old portfolio, and because there were plenty of resources online for how to deploy Next.js applications onto Github Pages. Deployment to Github Pages went rather smoothly, as Github already supplies a .yml file for Next.js applications; all I had to do was tinker with a bit of the settings to make the application a static build and everything was online.
 
 ## Review
 There are a lot of things I want to say when reviewing this project. For one, it was a lot shorter than some of my other projects, which can take weeks, months, or sometimes even years to even see fruition; it was honestly managed very well and I'm very proud of what I was able to accomplish so much in just a week.
