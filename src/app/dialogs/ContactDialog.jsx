@@ -8,8 +8,9 @@ export default function ContactDialog() {
         <p className="font-bold">CONTACT</p>
         <p>
           If you'd like to contact me for any reason, please don't hesitate
-          to reach out through my email (notbenwang@gmail.com) or through my
-          <a href="https://www.linkedin.com/in/benjamin-wang-7480201b5/" className='text-blue-400'> LinkedIn</a>.
+          to reach out through my email (notbenwang@gmail.com).
+           {/* or through my
+          <a href="https://www.linkedin.com/in/benjamin-wang-7480201b5/" className='text-blue-400'> LinkedIn</a>. */}
         </p>
     </DialogPanel>
   )
