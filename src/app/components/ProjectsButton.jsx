@@ -15,7 +15,7 @@ export default function ProjectsButton({Tilt, setOpen, setDialogTo}) {
             {/* <Tilt options={options}> */}
             <a onClick={() => {setOpen(true); setDialogTo(true);}}>
                 <div className=" box-border w-fit rounded-lg 
-                bg-slate-500 hover:bg-orange-400 shadow-inner hover:scale-110 transition ease-in-out p-3">
+                bg-slate-500 hover:bg-amber-500 shadow-inner hover:scale-110 transition ease-in-out p-3">
                         <p className='text-center text-white font-bold text-sm'>
                             PROJECTS
                         </p>

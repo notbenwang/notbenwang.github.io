@@ -53,7 +53,7 @@ export default function Home() {
 
       <div className="min-w-[900px] w-screen min-h-[750px] h-[95vh] absolute overflow-hidden z-[99]">
         
-        <div className=" bg-black bg-[url('/front-white.svg')] bg-no-repeat bg-cover overflow-hidden bg-bottom min-h-screen"> 
+        <div className=" bg-gray-950 bg-[url('/front-white.svg')] bg-no-repeat bg-cover overflow-hidden bg-bottom min-h-screen"> 
           <main className="flex flex-col justify-start mt-auto p-24 max-w-fit
             mx-auto ml-15 ">
             <Rotunda className="rotunda"/>

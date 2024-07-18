@@ -22,7 +22,7 @@ export default function BioBox({Tilt, setOpen, setDialogTo}) {
             </p>
         </div> */}
         <div className="w-fit rounded-md hover:scale-110 transition ease-in-out -mt-6 outline
-         outline-black/5 bg-slate-400 shadow-inner mb-5 p-3  hover:bg-amber-400"
+         outline-black/5 bg-slate-400 shadow-inner mb-5 p-3  hover:bg-rose-500"
          onClick={()=>{setOpen(true); setDialogTo(true)}}>
             <p className=" font-bold text-center text-white text-sm">
             ABOUT

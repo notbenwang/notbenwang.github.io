@@ -11,7 +11,7 @@ export default function SkillsButton({Tilt, setOpen, setDialogTo}) {
     <div className="-translate-y-[100px] translate-x-[300px]">
       <div className="container w-fit">
           <div className=" box-border w-fit rounded-lg bg-slate-600 
-            hover:bg-green-400 hover:scale-110 shadow-inner shadow-inner transition ease-in-out p-3"
+            hover:bg-green-500 hover:scale-110 shadow-inner transition ease-in-out p-3"
             onClick={() => {setOpen(true); setDialogTo(true);}}>
               <p className='text-center text-white font-bold text-sm'>
                   SKILLS
