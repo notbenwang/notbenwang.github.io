@@ -59,11 +59,29 @@ export default function ProjectsDialog() {
               }
               allowFullScreen
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"/>
-
+            <br/>
           </div>
-          <p className="mx-56 text-left">
-
-          </p>
+        </div>
+        <div className='flex flex-col'>
+          <hr/>
+            <br/>
+            <p className="text-2xl font-bold">Personal Portfolio</p>
+            <a className="italic">July 2024</a>
+            <a className="text-sm font-extralight text-blue-400" href="https://github.com/notbenwang/notbenwang.github.io">Github</a>
+            <br/>
+            <p className="mx-12 text-left">
+                The motivation behind this project was two things: a desire to create a portfolio that
+                better captured my own creativity and a test to push the limits of my developer skills, especially
+                on the front-end side. The final product was created using React, TailwindCSS, and Next.js,
+                and deployed using Github Pages. In terms of demoing the project, well you're already on it!
+                <br/>
+                <br/>
+                For more information on how I built this project, check out the 
+                <a href="https://github.com/notbenwang/notbenwang.github.io?tab=readme-ov-file#portfolio" className="text-blue-400"> ReadMe </a> 
+                on the site's Github page, where I go much more in depth with the development process, motivation, and review of this project.
+            </p>
+            <br/>
+            <img src="bwang.png"/>
         </div>
     </DialogPanel>
   )
