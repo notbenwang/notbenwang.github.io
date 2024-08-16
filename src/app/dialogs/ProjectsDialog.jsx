@@ -3,7 +3,7 @@ import {DialogPanel} from '@headlessui/react'
 
 export default function ProjectsDialog() {
   return (
-    <DialogPanel className="w-[clamp(40em,_60%,_40em)] h-3/4 overflow-y-scroll space-y-4 border bg-white p-12 
+    <DialogPanel className="w-[clamp(40em,_60%,_50em)] h-3/4 overflow-y-scroll space-y-4 border bg-white p-12 
         z-[150] text-black text-center font-light">
         <p>PROJECTS</p>
         <hr className=""/>
@@ -33,6 +33,32 @@ export default function ProjectsDialog() {
           </div>
         </div>
         <hr className=""/>
+        <div className="flex flex-col">
+          <br/>
+        <p className="text-2xl font-bold">The Endless Road</p>
+        <a className="italic">July 2024 - Present</a>
+          <a className="text-sm font-extralight">Point and Click Side-Scroller</a>
+          {/* <a className="text-sm text-blue-400" href="https://github.com/notbenwang/Project-Z">Github</a> */}
+          <p className="mx-12 text-left">
+            <br/>
+            A little passion project following a delivery robot as it travels down a long road with no end in sight.
+            Along the road are creatures and obstacles that the robot must overcome if it wishes to deliver
+            its package to the destination lying at the end of this endless road. Currently being developed by myself
+            using the Godot Game Engine.
+            <br/>
+          </p>
+          <div className="ratio ratio-16x9 self-center pt-5">
+          <iframe
+              className=""
+              width="460"
+              height="315"
+              src={"https://youtube.com/embed/5OR1FjGGVHo"
+              }
+              allowFullScreen
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"/>
+            <br/>
+          </div>
+        </div>
         <div className="flex flex-col">
           <br/>
         <p className="text-2xl font-bold">Untitled Project "Z"</p>
@@ -81,7 +107,7 @@ export default function ProjectsDialog() {
                 on the site's Github page, where I go much more in depth with the development process, motivation, and review of this project.
             </p>
             <br/>
-            <img src="bwang.png"/>
+            {/* <img src="bwang.png"/> */}
         </div>
     </DialogPanel>
   )
