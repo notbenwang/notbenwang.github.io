@@ -21,8 +21,8 @@ export default function AboutDialog() {
             </p>
             <br/>
             <p>
-              I also like to work hard. Like I said, I really like to solve problems, 
-              so if there's a problem I haven't solved and I have the capacity to solve it, then I'll just 
+              I also like to work hard. Since I really like to solve problems, 
+              if there's a problem I haven't solved and I have the capacity to solve it, then I'll just 
               keep at it. And if I don't have the capacity to solve it, then I'll just study and learn until I can.
               One reason I enjoy programming is that there's always some new problem, some new technology
               for me to learn and grow and improve in.
