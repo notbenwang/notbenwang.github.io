@@ -5,7 +5,29 @@ export default function ProjectsDialog() {
   return (
     <DialogPanel className="w-[clamp(40em,_60%,_50em)] h-3/4 overflow-y-scroll space-y-4 border bg-white p-12 
         z-[150] text-black text-center font-light">
-        <p>PROJECTS</p>
+        <h1 className="text-lg font-semibold">PROJECTS</h1>
+        <div className='flex flex-col'>
+          <hr/>
+            <br/>
+            <p className="text-2xl font-bold">Personal Portfolio</p>
+            <a className="italic">July 2024</a>
+            <a className="text-sm font-extralight text-blue-400" href="https://github.com/notbenwang/notbenwang.github.io">Github</a>
+            <br/>
+            <img src="day3.png" className="outline"/>
+            <br/>
+            <p className="mx-12 text-left">
+                The motivation behind this project was two things: a desire to create a portfolio that
+                better captured my own creativity and a test to push the limits of my developer skills, especially
+                on the front-end side. The final product was created using React, TailwindCSS, and Next.js,
+                and deployed using Github Pages. In terms of demoing the project, well you're already on it!
+                <br/>
+                <br/>
+                For more information on how I built this project, check out the 
+                <a href="https://github.com/notbenwang/notbenwang.github.io?tab=readme-ov-file#portfolio" className="text-blue-400"> ReadMe </a> 
+                on the site's Github page, where I go much more in depth with the development process, motivation, and review of this project.
+            </p>
+            <br/>
+        </div>
         <hr className=""/>
         <div className="flex flex-col">
         <p className="text-2xl font-bold">Puzzle App @ UVA</p>
@@ -59,56 +81,7 @@ export default function ProjectsDialog() {
             <br/>
           </div>
         </div>
-        <div className="flex flex-col">
-          <br/>
-        <p className="text-2xl font-bold">Untitled Project "Z"</p>
-        <a className="italic">December 2021 - Present</a>
-          <a className="text-sm font-extralight">Top Down Survival Game Shooter</a>
-          <a className="text-sm text-blue-400" href="https://github.com/notbenwang/Project-Z">Github</a>
-          <p className="mx-12 text-left">
-            <br/>
-            Originally a final project for the Intro CS course I took, I have been working on and off on this project, 
-            continuing to expand, refactor, and evolve the idea over the years. The
-            <a className="text-blue-400"href="https://github.com/notbenwang/CS1110-Final-Project"> game </a> was originally coded
-            in Python using a combination of the Pygame library and
-            another special python library created specifically for that Intro CS course, and over the last couple of years, I have
-            sought to refactor many of the more convoluded and inefficient aspects of that first project, including moving the 
-            project to C# and the implementation of my own collision/pathfinding libraries.
-            <br/>
-          </p>
-          <div className="ratio ratio-16x9 self-center pt-5">
-          <iframe
-              className=""
-              width="460"
-              height="315"
-              src={"https://youtube.com/embed/IcFWLHF7noU"
-              }
-              allowFullScreen
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"/>
-            <br/>
-          </div>
-        </div>
-        <div className='flex flex-col'>
-          <hr/>
-            <br/>
-            <p className="text-2xl font-bold">Personal Portfolio</p>
-            <a className="italic">July 2024</a>
-            <a className="text-sm font-extralight text-blue-400" href="https://github.com/notbenwang/notbenwang.github.io">Github</a>
-            <br/>
-            <p className="mx-12 text-left">
-                The motivation behind this project was two things: a desire to create a portfolio that
-                better captured my own creativity and a test to push the limits of my developer skills, especially
-                on the front-end side. The final product was created using React, TailwindCSS, and Next.js,
-                and deployed using Github Pages. In terms of demoing the project, well you're already on it!
-                <br/>
-                <br/>
-                For more information on how I built this project, check out the 
-                <a href="https://github.com/notbenwang/notbenwang.github.io?tab=readme-ov-file#portfolio" className="text-blue-400"> ReadMe </a> 
-                on the site's Github page, where I go much more in depth with the development process, motivation, and review of this project.
-            </p>
-            <br/>
-            {/* <img src="bwang.png"/> */}
-        </div>
+        
     </DialogPanel>
   )
 }
