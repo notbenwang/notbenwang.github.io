@@ -34,7 +34,7 @@ export default function AboutDialog() {
             <br/>
             <p className="font-extralight italic text-center">
               When I'm not on the computer, working, or studying, you can find me 
-              doing creative stuff like playing music, drawing ink sketches, or folding
+              doing creative stuff like playing music, <a href="../art" className="underline">drawing ink sketches</a>, or folding
               origami.
             </p>
             <br/>
