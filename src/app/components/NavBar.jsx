@@ -2,8 +2,9 @@ import React from 'react'
 
 export default function NavBar({setIsOpen, setAbout, setProjects, setContact}) {
   return (
-    <nav className="nav mx-5 h-[5vh] gap-4 list-none flex justify-between items-center">
-        <img src="/notbenwang.png" className="w-32 transition ease-in-out"/>
+    <nav className="nav h-[5vh] gap-4 list-none flex justify-between items-center bg-black">
+        <img src="/notbenwang.png" className="mx-5 w-32 transition ease-in-out"/>
+        <div className="mx-5">
         {/* <a href="https://github.com/notbenwang/notbenwang.github.io/"
          className="font-sans font-light text-gray-100 opacity-50 transition ease-in-out hover:opacity-100 hover:scale-105">
             
@@ -40,6 +41,8 @@ export default function NavBar({setIsOpen, setAbout, setProjects, setContact}) {
             </li>
 
         </ul>
+
+        </div>
     </nav>
   )
 }
