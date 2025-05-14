@@ -9,15 +9,15 @@ export default function ProjectsButton({Tilt, setOpen, setDialogTo}) {
       };
   return (
     
-        <div className="-translate-y-[120px] translate-x-[250px]">
+        <div className="ml-[55%]">
         <div className="container w-fit">
             <div className="flex-row">
             {/* <Tilt options={options}> */}
             <a onClick={() => {setOpen(true); setDialogTo(true);}}>
-                <div className=" box-border w-fit rounded-lg 
-                bg-slate-500 hover:bg-amber-500 shadow-inner hover:scale-110 transition ease-in-out p-3">
+                <div className=" box-border w-28 rounded-lg 
+                bg-slate-500 hover:bg-sky-400 shadow-inner hover:scale-110 mb-5 transition ease-in-out p-3">
                         <p className='text-center text-white font-bold text-sm'>
-                            PROJECTS
+                            WORK
                         </p>
                 </div>
                 </a>

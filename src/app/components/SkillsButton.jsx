@@ -8,13 +8,13 @@ export default function SkillsButton({Tilt, setOpen, setDialogTo}) {
     reverse: true
   };
   return (
-    <div className="-translate-y-[100px] translate-x-[300px]">
+    <div className=" ml-[55%]">
       <div className="container w-fit">
-          <div className=" box-border w-fit rounded-lg bg-slate-600 
+          <div className=" mb-5 box-border w-28 rounded-lg bg-slate-600 
             hover:bg-green-500 hover:scale-110 shadow-inner transition ease-in-out p-3"
             onClick={() => {setOpen(true); setDialogTo(true);}}>
               <p className='text-center text-white font-bold text-sm'>
-                  SKILLS
+                  LINKS
               </p>
           </div>
       </div>

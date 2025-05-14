@@ -12,7 +12,7 @@ export default function BioBox({Tilt, setOpen, setDialogTo}) {
     reverse: true
   };
   return (
-    <div className="-translate-y-[120px] translate-x-[220px]">
+    <div className="mt-[-45%] ml-[55%]">
   <div className="container">
   {/* <Tilt options={options} className="container"> */}
         {/* <div className="absolute box-border w-96 -mr-10  mb-5  ml-4" onClick={()=>{setOpen(true); setDialogTo(true)}}>
@@ -21,8 +21,8 @@ export default function BioBox({Tilt, setOpen, setDialogTo}) {
               Expand
             </p>
         </div> */}
-        <div className="w-fit rounded-md hover:scale-110 transition ease-in-out -mt-6 outline
-         outline-black/5 bg-slate-400 shadow-inner mb-5 p-3  hover:bg-rose-500"
+        <div className="w-28 rounded-md hover:scale-110 transition ease-in-out -mt-6 
+          bg-slate-400 shadow-inner mb-5 p-3  hover:bg-rose-500"
          onClick={()=>{setOpen(true); setDialogTo(true)}}>
             <p className=" font-bold text-center text-white text-sm">
             ABOUT

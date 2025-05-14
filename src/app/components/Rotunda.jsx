@@ -5,7 +5,7 @@ export default function Rotunda() {
     <>
     <div className="absolute bottom-0 translate-y- translate-x-[156px] -rotate-[-6deg] right-1/2 w-52
       transition ease-in-out hover:rotate-[0deg] z-[99]">
-      <a href="https://en.wikipedia.org/wiki/The_Rotunda_(University_of_Virginia)">
+      <a href="https://en.wikipedia.org/wiki/The_Rotunda_(University_of_Virginia)" target="_blank">
       <img className="overflow-hidden animate-floating1" src="/bg-bot.svg"/>
       </a>
     </div>

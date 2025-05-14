@@ -45,13 +45,13 @@ export default function Home() {
   return (
     <body>
 
-      <NavBar className="z-[100]" 
+      {/* <NavBar className="z-[100]" 
         setIsOpen={setIsOpen}
         setAbout={setIsAboutOpen}
         setProjects={setIsProjectsOpen}
-        setContact={setIsContactOpen}/>
+        setContact={setIsContactOpen}/> */}
 
-      <div className="min-w-[900px] w-screen min-h-[750px] h-[95vh] absolute overflow-hidden z-[99]">
+      <div className="min-w-[900px] w-screen min-h-[750px] absolute overflow-hidden z-[99]">
         
         <div className=" bg-gray-950 bg-[url('/front-white.svg')] bg-no-repeat bg-cover overflow-hidden bg-bottom min-h-screen"> 
           <main className="flex flex-col justify-start mt-auto p-24 max-w-fit
@@ -64,7 +64,6 @@ export default function Home() {
                 <ProjectsButton Tilt={Tilt} setOpen={setIsOpen} setDialogTo={setIsProjectsOpen}/>
                 <SkillsButton Tilt={Tilt} setOpen={setIsOpen} setDialogTo={setIsSkillsOpen}/>
                 <ContactButton Tilt={Tilt} setOpen={setIsOpen} setDialogTo={setIsContactOpen}/>
-                <ResumeButton Tilt={Tilt} />
               </div>
             </div>
           </main>
