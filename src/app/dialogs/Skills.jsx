@@ -3,7 +3,7 @@ import React from 'react'
 export default function Skills() {
   return (
     <>
-    <div className="outline outline-1 p-1 outline-gray-300">
+    <div className="">
         <h1 className="text-lg font-semibold">Languages</h1>
         Python, Java, SQL (PostgreSQL), Javascript, C
 

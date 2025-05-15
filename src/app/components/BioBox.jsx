@@ -1,9 +1,7 @@
 "use client"
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 
-export default function BioBox({Tilt, setOpen, setDialogTo}) {
-
-
+export default function BioBox({Tilt, setOpen, setDialogTo, hoverSound}) {
   
   const options = {
     scale: 1.1,
@@ -23,11 +21,12 @@ export default function BioBox({Tilt, setOpen, setDialogTo}) {
         </div> */}
         <div className="w-28 rounded-md hover:scale-110 transition ease-in-out -mt-6 
           bg-slate-400 shadow-inner mb-5 p-3  hover:bg-rose-500"
-         onClick={()=>{setOpen(true); setDialogTo(true)}}>
+         onClick={()=>{setOpen(true); setDialogTo(true); hoverSound();}} onMouseEnter={hoverSound} >
             <p className=" font-bold text-center text-white text-sm">
             ABOUT
             </p>
         </div>
+
     {/* </Tilt> */}
   </div>
 </div>

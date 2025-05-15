@@ -1,66 +1,38 @@
 import React from 'react'
 import {DialogPanel} from '@headlessui/react'
 import { Tooltip } from '@mui/material'
-export default function SkillsDialog() {
-  return (
-    <DialogPanel className="w-[min(60%,_25em)] h-fit space-y-4 border rounded-xl font-light bg-white p-10 
-        z-[150] text-black text-center ">
-        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-        <p className="font-bold text-2xl">SKILLS</p>
-        
-        <p>My Go To's</p>
-        <div className="flex flex-row justify-between p-3">
-            <Tooltip title="Python">
-                <img className="w-1/6"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"/>
-            </Tooltip>
-            <Tooltip title="Javascript">  
-                <img className="w-1/6" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/>
-            </Tooltip>
-            <Tooltip title="Java">
-                <img className="w-1/6" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />    
-            </Tooltip>  
-        </div>
+export default function SkillsDialog({a1, a2}) {
 
-        <div className="flex flex-row justify-between px-3">
-            <Tooltip title="C">
-                <img className="w-1/6" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
-            </Tooltip>
-            <Tooltip title="HTML-5">
-                <img className="w-1/6" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-            </Tooltip>
-            <Tooltip title="CSS-3">
-                <img className="w-1/6" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-            </Tooltip>
+  return (
+    <DialogPanel className="w-[min(90%,_40em)] border rounded-xl font-light bg-white p-10 
+        z-[150] text-black">
+        <p className="text-2xl">Links</p>
+        <br/>
+        <div className="flex justify-between px-3 outline outline-1 outline-gray-400">
+            <a href="https://github.com/notbenwang" className="scale-50 on hover:scale-75 transition ease-in-out" target="_blank" onMouseEnter={a1}>
+                <Tooltip title="Github">
+                <img  src="https://www.svgrepo.com/show/512317/github-142.svg" />
+                </Tooltip>
+            </a>
+            <a href="https://www.linkedin.com/in/notbenwang/" className="scale-50 on hover:scale-75 transition ease-in-out" target="_blank"onMouseEnter={a2}>
+                <Tooltip title="LinkedIn">
+                <img src="https://www.svgrepo.com/show/473701/linkedin.svg"/>
+                </Tooltip>
+            </a>
+            <a href="https://www.artstation.com/binji_man" className="scale-50 on hover:scale-75 transition ease-in-out"  target="_blank" onMouseEnter={a1}>
+                <Tooltip title="ArtStation">
+                <img src="https://www.svgrepo.com/show/341618/artstation.svg" />
+                </Tooltip>
+            </a>
+            <a href="/resume.pdf" className="scale-50 on hover:scale-75 transition ease-in-out"  target="_blank" onMouseEnter={a2}>
+                <Tooltip title="Resume">
+                <img src="https://www.svgrepo.com/show/483015/resume-4.svg" />
+                </Tooltip>
+            </a>
+
         </div>
-        <p>Technologies</p>
-        <div className="flex flex-row justify-between px-3">
-            <Tooltip title="React">
-                <img className="w-1/6" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
-            </Tooltip>
-            <Tooltip title="TailwindCSS">
-                <img className="w-1/6" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
-            </Tooltip>
-            <Tooltip title="Express.js">
-                <img className="w-1/6" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"/>
-            </Tooltip>
-            <Tooltip title="Nodejs">
-                <img className="w-1/6" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
-            </Tooltip>
-        </div>
-        <div className="flex flex-row justify-between px-3">
-            <Tooltip title="Django">
-                <img className="w-1/6" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" />
-            </Tooltip>
-            <Tooltip title="Adobe Photoshop">
-                <img className="w-1/6" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" />
-            </Tooltip>
-            <Tooltip title="Adobe Premiere">
-                <img className="w-1/6" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/premierepro/premierepro-original.svg"/>
-            </Tooltip>
-            <Tooltip title="Solidity">
-                <img className="w-1/6" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidity/solidity-original.svg"/>
-            </Tooltip>
-        </div>
+        <br/>
+        <img src="./avalon.jpg"/>
     </DialogPanel>
   )
 }

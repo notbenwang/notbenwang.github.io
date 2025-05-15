@@ -23,7 +23,12 @@ export default function Home() {
   const [isSkillsOpen, setIsSkillsOpen] = useState(false)
   const [isProjectsOpen, setIsProjectsOpen] = useState(false)
   const [isContactOpen, setIsContactOpen] = useState(false)
-
+  const [muted, setMuted] = useState(false);
+  
+  const audioRef1 = useRef(null)
+  const audioRef2 = useRef(null)
+  const playSound1 = () => {if (muted) return; audioRef1.current.play();}
+  const playSound2 = () => {if (muted) return; audioRef2.current.play();}
   function Tilt(props) {
     const { options, ...rest} = props;
     const tilt = useRef(null)
@@ -33,6 +38,9 @@ export default function Home() {
   
     return <div ref={tilt} {...rest} />;
   }
+  const toggleMute = () => {
+    setMuted(prev => !prev);
+  };
 
   function handleDialogClose() {
     setIsOpen(false);
@@ -44,30 +52,29 @@ export default function Home() {
 
   return (
     <body>
-
-      {/* <NavBar className="z-[100]" 
-        setIsOpen={setIsOpen}
-        setAbout={setIsAboutOpen}
-        setProjects={setIsProjectsOpen}
-        setContact={setIsContactOpen}/> */}
-
-      <div className="min-w-[900px] w-screen min-h-[750px] absolute overflow-hidden z-[99]">
+      <div className="min-w-[900px] w-screen  absolute overflow-hidden z-[99]">
         
         <div className=" bg-gray-950 bg-[url('/front-white.svg')] bg-no-repeat bg-cover overflow-hidden bg-bottom min-h-screen"> 
+        
           <main className="flex flex-col justify-start mt-auto p-24 max-w-fit
             mx-auto ml-15 ">
-            <Rotunda className="rotunda"/>
+            <Rotunda className="rotunda" a1={playSound1} a2={playSound2}/>
             <div className="flex-col m-auto z-[98]">
-              <AnimatedHeader Tilt={Tilt}/>
+              <AnimatedHeader Tilt={Tilt} a1={playSound1} a2={playSound2}/>
               <div className="flex-col tracking-widest pt-40 mx-auto -translate-y-[0px] translate-x-[155px] z-[98]">
-                <BioBox Tilt={Tilt} setOpen={setIsOpen} setDialogTo={setIsAboutOpen}/>
-                <ProjectsButton Tilt={Tilt} setOpen={setIsOpen} setDialogTo={setIsProjectsOpen}/>
-                <SkillsButton Tilt={Tilt} setOpen={setIsOpen} setDialogTo={setIsSkillsOpen}/>
-                <ContactButton Tilt={Tilt} setOpen={setIsOpen} setDialogTo={setIsContactOpen}/>
+                <BioBox Tilt={Tilt} setOpen={setIsOpen} setDialogTo={setIsAboutOpen} hoverSound={playSound1}/>
+                <ProjectsButton Tilt={Tilt} setOpen={setIsOpen} setDialogTo={setIsProjectsOpen} hoverSound={playSound2}/>
+                <SkillsButton Tilt={Tilt} setOpen={setIsOpen} setDialogTo={setIsSkillsOpen} hoverSound={playSound1}/>
+                <ContactButton Tilt={Tilt} setOpen={setIsOpen} setDialogTo={setIsContactOpen} hoverSound={playSound2}/>
               </div>
             </div>
           </main>
         </div>
+           <button
+            onClick={toggleMute}
+            className={`absolute bottom-0 w-[50px] px-4 py-2 rounded ${muted ? 'opacity-25' : 'opacity-90'}`}>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/500px-Speaker_Icon.svg.png"/>
+          </button>
       
       <Dialog transition open={isOpen} onClose={() => handleDialogClose()} 
         className="relative z-[100] transition duration-300 ease-in-out data-[closed]:opacity-0 ">
@@ -76,10 +83,12 @@ export default function Home() {
           {isAboutOpen && <AboutDialog/>}
           {isProjectsOpen && <ProjectsDialog/>}
           {isContactOpen && <ContactDialog/>}
-          {isSkillsOpen && <SkillsDialog/>}
+          {isSkillsOpen && <SkillsDialog a1={playSound1} a2={playSound2}/>}
         </div>
       </Dialog>
-
+     
+        <audio ref={audioRef1} src="/sounds/Abstract1.mp3" preload="auto"/>
+        <audio ref={audioRef2} src="/sounds/Abstract2.mp3" preload="auto"/>
     </div>
   </body>
   );
