@@ -7,18 +7,19 @@ export default function ProjectsDialog() {
         z-[150] text-black font-light">
         <img src="/motorbike.jpg" className="w-full mx-auto"/>
         <div className='flex flex-col'>
+            <hr/>
             <p className="text-2xl my-1">Skills</p>
             <hr/>
             <Skills/> 
             <br/>
+          <hr/>
           <p className="text-2xl my-1">Projects</p>
           <hr/>
           
           <p className="mt-1 text-2xl font-bold underline">Everything is Bad Apple</p>
           <a className="italic">May 2025</a>
           <p>
-          <a className="text-sm  text-blue-400 underline" target="_blank" href="https://github.com/notbenwang/bad-apple-quilt/">Github</a> |
-           <a className="text-sm  text-blue-400 underline" target="_blank" href="https://drive.google.com/file/d/1vTed8ujfvQhJMnZfW27-M976UVNeX4kN/view?usp=sharing"> Video</a>
+          <a className="text-sm  text-blue-400 underline" target="_blank" href="https://github.com/notbenwang/bad-apple-quilt/">Github</a>
           </p>
           <p className="text-left">
               Program that recreates images using only frames from <a target="_blank" href="https://youtu.be/FtutLA63Cp8?si=jRQuS-WMELmScNEN" className="text-blue-400 underline">Bad Apple</a>.

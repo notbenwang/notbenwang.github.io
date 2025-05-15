@@ -75,7 +75,9 @@ export default function Home() {
             className={`absolute bottom-0 w-[50px] px-4 py-2 rounded ${muted ? 'opacity-25' : 'opacity-90'}`}>
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/500px-Speaker_Icon.svg.png"/>
           </button>
-      
+          <footer className="absolute bottom-0 text-black text-xs right-1 font-extralight">
+            © 2025 Benjamin Wang 
+          </footer>
       <Dialog transition open={isOpen} onClose={() => handleDialogClose()} 
         className="relative z-[100] transition duration-300 ease-in-out data-[closed]:opacity-0 ">
         <div className="fixed inset-0 flex w-screen items-center justify-center p-4">
@@ -89,6 +91,7 @@ export default function Home() {
      
         <audio ref={audioRef1} src="/sounds/Abstract1.mp3" preload="auto"/>
         <audio ref={audioRef2} src="/sounds/Abstract2.mp3" preload="auto"/>
+
     </div>
   </body>
   );

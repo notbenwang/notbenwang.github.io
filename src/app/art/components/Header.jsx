@@ -8,9 +8,9 @@ export default function Header() {
         <a href="../art" className="text-left hover:text-gray-500 transition ease-in-out">
             Benjamin Wang
         </a>
-        <h1 className="text-right italic text-lg">
-            pushing the threshold
-        </h1>
+        <a href="https://www.artstation.com/binji_man" className="text-left hover:text-gray-500 transition italic text-md font-extralight ease-in-out">
+            @binjiman
+        </a>
     
     </div>
   )

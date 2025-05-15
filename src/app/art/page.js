@@ -15,7 +15,7 @@ export default function page() {
             <Portrait/>
             <Gallery/>
             <footer className="text-black text-sm font-extralight">
-            © 2024 Benjamin Wang 
+            © 2025 Benjamin Wang 
           </footer>
         </div>
       </div>
