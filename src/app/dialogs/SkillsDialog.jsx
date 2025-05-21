@@ -19,9 +19,9 @@ export default function SkillsDialog({a1, a2}) {
                 <img src="https://www.svgrepo.com/show/473701/linkedin.svg"/>
                 </Tooltip>
             </a>
-            <a href="https://www.artstation.com/binji_man" className="scale-50 on hover:scale-75 transition ease-in-out"  target="_blank" onMouseEnter={a1}>
-                <Tooltip title="ArtStation">
-                <img src="https://www.svgrepo.com/show/341618/artstation.svg" />
+            <a href="/art" className="scale-50 on hover:scale-75 transition ease-in-out"  target="_blank" onMouseEnter={a1}>
+                <Tooltip title="Art Portfolio">
+                <img src="https://www.svgrepo.com/show/447250/art.svg" />
                 </Tooltip>
             </a>
             <a href="/resume.pdf" className="scale-50 on hover:scale-75 transition ease-in-out"  target="_blank" onMouseEnter={a2}>

@@ -5,14 +5,15 @@ export default function ProjectsDialog() {
   return (
     <DialogPanel className="w-[clamp(40em,_60%,_50em)] h-3/4 overflow-y-scroll space-y-4 border bg-white p-12 
         z-[150] text-black font-light">
-        <img src="/motorbike.jpg" className="w-full mx-auto"/>
+        <img src="/sk-143.png" className="w-full mx-auto outline"/>
         <div className='flex flex-col'>
             <hr/>
             <p className="text-2xl my-1">Skills</p>
             <hr/>
             <Skills/> 
             <br/>
-          <hr/>
+
+          {/* <hr/> */}
           <p className="text-2xl my-1">Projects</p>
           <hr/>
           
@@ -63,6 +64,7 @@ export default function ProjectsDialog() {
         <p className="text-2xl font-bold underline">Portfolio (2025)</p>
         I also made this portfolio! You can find details about the process of how I designed it <a target="_blank" href="https://github.com/notbenwang/notbenwang.github.io/" className="underline text-blue-400">here</a>.
         
+        <img src="/motorbike.jpg" className="w-full mx-auto"/>
     </DialogPanel>
   )
 }

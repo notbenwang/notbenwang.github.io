@@ -12,7 +12,7 @@ export default function AboutDialog() {
             Ben Wang  
             </p>
             <p className="font-extralight text-sm">
-              Rotational Engineer at Pennymac <br/>
+              {/* Rotational Engineer at Pennymac <br/> */}
               Aspiring Software Developer <br/> 
               Casual Artist and Musician <br/>
             </p>
